@@ -40,7 +40,7 @@
       "palette": [
         {
           "slug": "ti-bg",
-          "color": "var(--nv-site-bg, #FFFFFF)",
+          "color": "var(--nv-site-bg, #F6F4F2)",
           "name": "Background"
         },
         {
@@ -50,27 +50,27 @@
         },
         {
           "slug": "ti-accent",
-          "color": "var(--nv-primary-accent, #325ce8)",
+          "color": "var(--nv-primary-accent, #923416)",
           "name": "Accent"
         },
         {
           "slug": "ti-accent-secondary",
-          "color": "var(--nv-secondary-accent, #1B47DA)",
+          "color": "var(--nv-secondary-accent, #B5431F)",
           "name": "Accent Secondary"
         },
         {
           "slug": "ti-bg-inv",
-          "color": "var(--nv-dark-bg, #1A1919)",
+          "color": "var(--nv-dark-bg, #582515)",
           "name": "Background Dark"
         },
         {
           "slug": "ti-bg-alt",
-          "color": "var(--nv-light-bg, #f7f7f3)",
+          "color": "var(--nv-light-bg, #EEE8E1)",
           "name": "Background Alt"
         },
         {
           "slug": "ti-fg-alt",
-          "color": "var(--nv-text-dark-bg, #FBFBFB)",
+          "color": "var(--nv-text-dark-bg, #FFFFFF)",
           "name": "Foreground Alt"
         }
       ],
