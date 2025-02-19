@@ -62,7 +62,7 @@ class Admin {
 		add_action( 'admin_notices', array( $this, 'render_survey_notice' ) );
 		add_action( 'wp_ajax_church_fse_dismiss_welcome_notice', array( $this, 'remove_welcome_notice' ) );
 		add_action( 'wp_ajax_church_fse_dismiss_survey_notice', array( $this, 'remove_survey_notice' ) );
-		add_action( 'admin_print_scripts', array( $this, 'add_nps_form' ) );
+		// add_action( 'admin_print_scripts', array( $this, 'add_nps_form' ) ); Disable for now
 
 		add_action( 'wp_ajax_church_fse_set_otter_ref', array( $this, 'set_otter_ref' ) );
 	}
