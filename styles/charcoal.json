@@ -1,39 +1,39 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "title": "Dark Pastel Red",
+  "title": "Charcoal",
   "version": 2,
   "settings": {
     "color": {
       "palette": [
         {
           "slug": "ti-bg",
-          "color": "#F8F4F4",
+          "color": "#181818",
           "name": "Background"
         },
         {
           "slug": "ti-fg",
-          "color": "#313132",
+          "color": "#FFFFFF",
           "name": "Foreground"
         },
         {
           "slug": "ti-accent",
-          "color": "#C6461E",
+          "color": "#958A6B",
           "name": "Accent"
         },
         {
           "slug": "ti-accent-secondary",
-          "color": "#A93C19",
+          "color": "#91835B",
           "name": "Accent Secondary"
         },
         {
-          "slug": "ti-bg-inv",
-          "color": "#1D1A1A",
-          "name": "Background Dark"
+          "slug": "ti-bg-alt",
+          "color": "#1E1E1E",
+          "name": "Background Alt"
         },
         {
-          "slug": "ti-bg-alt",
-          "color": "#FFFFFF",
-          "name": "Background Alt"
+          "slug": "ti-bg-inv",
+          "color": "#040404",
+          "name": "Background Dark"
         },
         {
           "slug": "ti-fg-alt",
@@ -47,42 +47,42 @@
     "elements": {
       "h1": {
         "typography": {
-          "fontWeight": "500"
+          "fontWeight": "700"
         }
       },
       "h2": {
         "typography": {
-          "fontWeight": "500"
+          "fontWeight": "700"
         }
       },
       "h3": {
         "typography": {
-          "fontWeight": "500"
+          "fontWeight": "700"
         }
       },
       "h4": {
         "typography": {
-          "fontWeight": "500"
+          "fontWeight": "700"
         }
       },
       "h5": {
         "typography": {
-          "fontWeight": "500"
+          "fontWeight": "700"
         }
       },
       "h6": {
         "typography": {
-          "fontWeight": "500"
+          "fontWeight": "700"
         }
       },
       "heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--outfit)"
+          "fontFamily": "var(--wp--preset--font-family--fraunces)"
         }
       }
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--spline-sans)"
+      "fontFamily": "var(--wp--preset--font-family--albert-sans)"
     }
   }
 }

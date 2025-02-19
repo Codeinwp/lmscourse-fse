@@ -1,39 +1,39 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "title": "Crayola",
+  "title": "Violet",
   "version": 2,
   "settings": {
     "color": {
       "palette": [
         {
           "slug": "ti-bg",
-          "color": "#FFFFFF",
+          "color": "#181818",
           "name": "Background"
         },
         {
           "slug": "ti-fg",
-          "color": "#1F2023",
+          "color": "#FFFFFF",
           "name": "Foreground"
         },
         {
           "slug": "ti-accent",
-          "color": "#F5AB1A",
+          "color": "#996FB2",
           "name": "Accent"
         },
         {
           "slug": "ti-accent-secondary",
-          "color": "#E1980A",
+          "color": "#81529D",
           "name": "Accent Secondary"
         },
         {
-          "slug": "ti-bg-inv",
-          "color": "#14171C",
-          "name": "Background Dark"
+          "slug": "ti-bg-alt",
+          "color": "#1F1F1F",
+          "name": "Background Alt"
         },
         {
-          "slug": "ti-bg-alt",
-          "color": "#F6F6F6",
-          "name": "Background Alt"
+          "slug": "ti-bg-inv",
+          "color": "#000000",
+          "name": "Background Dark"
         },
         {
           "slug": "ti-fg-alt",
@@ -45,19 +45,24 @@
   },
   "styles": {
     "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--playfair-display)"
+        }
+      },
       "h1": {
         "typography": {
-          "fontWeight": "600"
+          "fontWeight": "800"
         }
       },
       "h2": {
         "typography": {
-          "fontWeight": "600"
+          "fontWeight": "800"
         }
       },
       "h3": {
         "typography": {
-          "fontWeight": "600"
+          "fontWeight": "800"
         }
       },
       "h4": {
@@ -76,13 +81,8 @@
         }
       }
     },
-    "heading": {
-      "typography": {
-        "fontFamily": "var(--wp--preset--font-family--inter)"
-      }
-    },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--inter)"
+      "fontFamily": "var(--wp--preset--font-family--source-sans-pro)"
     }
   }
 }

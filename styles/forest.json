@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "title": "Majorelle Blue",
+  "title": "Forest",
   "version": 2,
   "settings": {
     "color": {
@@ -12,32 +12,32 @@
         },
         {
           "slug": "ti-fg",
-          "color": "#1F2023",
+          "color": "#141414",
           "name": "Foreground"
         },
         {
           "slug": "ti-accent",
-          "color": "#5E33D9",
+          "color": "#4D9B67",
           "name": "Accent"
         },
         {
           "slug": "ti-accent-secondary",
-          "color": "#4F25C6",
+          "color": "#396D4A",
           "name": "Accent Secondary"
         },
         {
           "slug": "ti-bg-inv",
-          "color": "#261E3C",
+          "color": "#0F0F0F",
           "name": "Background Dark"
         },
         {
           "slug": "ti-bg-alt",
-          "color": "#EEEBF5",
+          "color": "#F4F4F4",
           "name": "Background Alt"
         },
         {
           "slug": "ti-fg-alt",
-          "color": "#FFFFFA",
+          "color": "#FFFFFf",
           "name": "Foreground Alt"
         }
       ]
