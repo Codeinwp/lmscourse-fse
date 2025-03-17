@@ -29,7 +29,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"huge"} -->
-<h1 class="wp-block-heading has-text-align-center has-huge-font-size">A Community of Faith, Worship, and Unwavering Hope</h1>
+<h2 class="wp-block-heading has-text-align-center has-huge-font-size">A Community of Faith, Worship, and Unwavering Hope</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
