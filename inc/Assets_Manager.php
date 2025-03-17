@@ -19,7 +19,6 @@ class Assets_Manager {
 		'frontend-css'   => 'church-fse-style',
 		'editor-css'     => 'church-fse-editor',
 		'welcome-notice' => 'church-fse-welcome-notice',
-		'general-notice' => 'church-fse-general-notice',
 	);
 
 	const AVAILABLE_THEME_FONTS = array(
