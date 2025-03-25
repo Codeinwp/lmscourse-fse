@@ -9,9 +9,9 @@
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
 ## Description ##
-Church FSE is a modern, minimalistic theme that is fully compatible with full-site-editing. This powerful theme offers a range of patterns that make it perfect for simple design is suitable for a wide range of purposes, including blogs, small businesses, startups, agencies, firms, e-commerce shops, personal portfolio sites, and more. It also comes with several style variations to suit your unique aesthetic.
+Church FSE is a modern Full Site Editing WordPress theme perfect for churches and religious organizations. Create an engaging website with ready-to-use patterns for sermons, events, ministries, and donations. The theme features a mobile-optimized design, live streaming support, and a prayer request system. Built with performance and accessibility in mind, Church FSE offers extensive customization through WordPress's native block editor.
 ## Copyright ##
-Church FSE WordPress theme, Copyright 2023 Themeisle
+Church FSE WordPress theme, Copyright 2025 Themeisle
 Church FSE is distributed under the terms of the GNU GPLv2 or later
 
 ## Changelog ##
