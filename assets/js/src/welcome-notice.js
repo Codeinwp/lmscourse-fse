@@ -1,4 +1,4 @@
-/* global neveFSEData, jQuery */
+/* global churchFSEData, jQuery */
 
 import { installPlugin, activatePlugin } from './common/plugin-install';
 
@@ -8,16 +8,18 @@ function handleWelcomeNotice( $ ) {
 		installing,
 		done,
 		activationUrl,
-		onboardingUrl,
+		redirectUrl,
 		ajaxUrl,
 		nonce,
-		otterRefNonce,
-		otterStatus,
-	} = neveFSEData;
+		wpfpRefNonce,
+		wpfpStatus,
+	} = churchFSEData;
 
-	const installBtn = $( '.neve-fse-welcome-notice #neve-fse-install-otter' );
-	const dismissBtn = $( '.neve-fse-welcome-notice .notice-dismiss' );
-	const notice = $( '.neve-fse-welcome-notice' );
+	const installBtn = $(
+		'.church-fse-welcome-notice #church-fse-install-wpfp'
+	);
+	const dismissBtn = $( '.church-fse-welcome-notice .notice-dismiss' );
+	const notice = $( '.church-fse-welcome-notice' );
 	const installText = installBtn.find( '.text' );
 	const installSpinner = installBtn.find( '.dashicons' );
 
@@ -29,45 +31,44 @@ function handleWelcomeNotice( $ ) {
 		} );
 	};
 
-	const activateOtter = async () => {
+	const activateWpfp = async () => {
 		installText.text( activating );
 		await activatePlugin( activationUrl );
 
 		await $.post( ajaxUrl, {
-			nonce: otterRefNonce,
-			action: 'neve_fse_set_otter_ref',
+			nonce: wpfpRefNonce,
+			action: 'church_fse_set_wpfp_ref',
 		} );
 
 		installSpinner.removeClass( 'dashicons-update' );
 		installSpinner.addClass( 'dashicons-yes' );
 		installText.text( done );
 		setTimeout( hideAndRemoveNotice, 1500 );
-		window.location.href = onboardingUrl;
+		window.location.replace( redirectUrl );
 	};
 
 	$( installBtn ).on( 'click', async () => {
 		installSpinner.removeClass( 'hidden' );
 		installBtn.attr( 'disabled', true );
 
-		if ( otterStatus === 'active' ) {
-			window.location.href = onboardingUrl;
+		if ( wpfpStatus === 'active' ) {
 			return;
 		}
 
-		if ( otterStatus === 'installed' ) {
-			await activateOtter();
+		if ( wpfpStatus === 'installed' ) {
+			await activateWpfp();
 			return;
 		}
 
 		installText.text( installing );
-		await installPlugin( 'otter-blocks' );
-		await activateOtter();
+		await installPlugin( 'wp-full-stripe-free' );
+		await activateWpfp();
 	} );
 
 	$( dismissBtn ).on( 'click', () => {
 		$.post( ajaxUrl, {
 			nonce,
-			action: 'neve_fse_dismiss_welcome_notice',
+			action: 'church_fse_dismiss_welcome_notice',
 			success: hideAndRemoveNotice,
 		} );
 	} );
