@@ -18,3 +18,11 @@ Church FSE is distributed under the terms of the GNU GPLv2 or later
 
 ## Resources ##
 All images are licensed under CC0.
+
+church-fse-1 - https://free-images.com/display/church_singing_hymn_1499312.html
+church-fse-2 - https://free-images.com/display/church_steeple_cross_architecture.html
+church-fse-3 - https://free-images.com/display/cross_jesus_faith_crucifixion.html
+church-fse-4 - https://free-images.com/display/el_salvador_angel_light.html
+church-fse-5 - https://free-images.com/display/paper_old_texture_parchment_0.html
+church-fse-6 - https://free-images.com/display/pray_faith_bible_religion.html
+church-fse-7 - https://free-images.com/display/prayer_devotion_thought_christ.html
