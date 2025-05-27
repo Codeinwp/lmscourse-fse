@@ -71,6 +71,7 @@ function define_constants() {
 	define( 'CHURCH_FSE_DEBUG', defined( 'WP_DEBUG' ) && WP_DEBUG === true );
 	define( 'CHURCH_FSE_DIR', trailingslashit( get_template_directory() ) );
 	define( 'CHURCH_FSE_URL', trailingslashit( get_template_directory_uri() ) );
+	define( 'CHURCH_FSE_PRODUCT_SLUG', basename( CHURCH_FSE_DIR ) );
 }
 
 /**
