@@ -3,20 +3,20 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: archive-cover
  * title: Archive (Cover)
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: archive, posts, cover
  */
 
-use ChurchFSE\Assets_Manager;
+use LMSCourseFSE\Assets_Manager;
 
 return array(
-	'title'      => __( 'Archive (Cover)', 'church-fse' ),
-	'categories' => array( 'church-fse-layouts' ),
+	'title'      => __( 'Archive (Cover)', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse-layouts' ),
 	'keywords'   => array( 'archive', 'posts', 'cover' ),
 	'content'    => '
 <!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}}} -->

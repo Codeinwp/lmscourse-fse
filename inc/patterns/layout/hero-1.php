@@ -3,27 +3,27 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: hero-1
  * title: Hero Section
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: hero, cover
  */
 
-use ChurchFSE\Assets_Manager;
+use LMSCourseFSE\Assets_Manager;
 
-$church_fse_img03 = Assets_Manager::get_image_url( 'church-fse-3.webp' );
+$lmscourse_fse_img03 = Assets_Manager::get_image_url( 'lmscourse-fse-3.webp' );
 
 return array(
-	'title'      => __( 'Hero Section', 'church-fse' ),
-	'categories' => array( 'church-fse' ),
+	'title'      => __( 'Hero Section', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse' ),
 	'keywords'   => array( 'hero', 'cover' ),
 	'content'    => '
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"' . esc_url( $church_fse_img03 ) . '","id":298,"hasParallax":true,"dimRatio":90,"overlayColor":"ti-bg-inv","isUserOverlayColor":true,"minHeight":75,"minHeightUnit":"vh","contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"top":"24px","right":"24px","bottom":"24px","left":"24px"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-cover alignfull has-parallax" style="margin-top:0;margin-bottom:0;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;min-height:75vh"><span aria-hidden="true" class="wp-block-cover__background has-ti-bg-inv-background-color has-background-dim-90 has-background-dim"></span><div class="wp-block-cover__image-background wp-image-298 has-parallax" style="background-position:50% 50%;background-image:url(' . esc_url( $church_fse_img03 ) . ')"></div><div class="wp-block-cover__inner-container"><!-- wp:group {"textColor":"ti-fg-alt","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"' . esc_url( $lmscourse_fse_img03 ) . '","id":298,"hasParallax":true,"dimRatio":90,"overlayColor":"ti-bg-inv","isUserOverlayColor":true,"minHeight":75,"minHeightUnit":"vh","contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"top":"24px","right":"24px","bottom":"24px","left":"24px"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-cover alignfull has-parallax" style="margin-top:0;margin-bottom:0;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;min-height:75vh"><span aria-hidden="true" class="wp-block-cover__background has-ti-bg-inv-background-color has-background-dim-90 has-background-dim"></span><div class="wp-block-cover__image-background wp-image-298 has-parallax" style="background-position:50% 50%;background-image:url(' . esc_url( $lmscourse_fse_img03 ) . ')"></div><div class="wp-block-cover__inner-container"><!-- wp:group {"textColor":"ti-fg-alt","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-ti-fg-alt-color has-text-color"><!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"}},"fontSize":"small"} -->
 <p class="has-text-align-center has-small-font-size" style="font-style:normal;font-weight:700;text-transform:uppercase"><strong>Sanctus Ipsum</strong></p>
 <!-- /wp:paragraph -->

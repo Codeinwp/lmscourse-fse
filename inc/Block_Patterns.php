@@ -3,18 +3,18 @@
  * Patterns Handler.
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  */
 
-namespace ChurchFSE;
+namespace LMSCourseFSE;
 
 use WP_Block_Pattern_Categories_Registry;
 
 /**
  * Class Block_Patterns
  *
- * @package church-fse
+ * @package lmscourse-fse
  */
 class Block_Patterns {
 
@@ -59,13 +59,13 @@ class Block_Patterns {
 	 */
 	private function setup_properties() {
 		$categories = array(
-			'church-fse'         => array(
-				'label'       => __( 'Church FSE Patterns', 'church-fse' ),
-				'description' => __( 'Patterns for several sections and components', 'church-fse' ),
+			'lmscourse-fse'         => array(
+				'label'       => __( 'LMSCourse FSE Patterns', 'lmscourse-fse' ),
+				'description' => __( 'Patterns for several sections and components', 'lmscourse-fse' ),
 			),
-			'church-fse-layouts' => array(
-				'label'       => __( 'Church FSE Layouts', 'church-fse' ),
-				'description' => __( 'Full-page layouts that can be used as templates', 'church-fse' ),
+			'lmscourse-fse-layouts' => array(
+				'label'       => __( 'LMSCourse FSE Layouts', 'lmscourse-fse' ),
+				'description' => __( 'Full-page layouts that can be used as templates', 'lmscourse-fse' ),
 			),
 		);
 
@@ -108,8 +108,8 @@ class Block_Patterns {
 			'page_titles/page-title-2',
 		);
 
-		$this->categories = apply_filters( 'church_fse_block_patterns_categories', $categories );
-		$this->patterns   = apply_filters( 'church_fse_block_patterns', $patterns );
+		$this->categories = apply_filters( 'lmscourse_fse_block_patterns_categories', $categories );
+		$this->patterns   = apply_filters( 'lmscourse_fse_block_patterns', $patterns );
 	}
 
 	/**
@@ -134,13 +134,13 @@ class Block_Patterns {
 	 */
 	private function register_patterns() {
 		foreach ( $this->patterns as $pattern ) {
-			$file = CHURCH_FSE_DIR . 'inc/patterns/' . $pattern . '.php';
+			$file = LMSCOURSE_FSE_DIR . 'inc/patterns/' . $pattern . '.php';
 
 			if ( ! is_file( $file ) ) {
 				continue;
 			}
 
-			register_block_pattern( 'church-fse/' . $pattern, require $file );
+			register_block_pattern( 'lmscourse-fse/' . $pattern, require $file );
 		}
 	}
 }

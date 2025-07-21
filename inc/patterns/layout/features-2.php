@@ -3,20 +3,20 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: features-2
  * title: Features 2
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: features, cards, columns
  */
 
-use ChurchFSE\Assets_Manager;
+use LMSCourseFSE\Assets_Manager;
 
 return array(
-	'title'      => __( 'Features', 'church-fse' ),
-	'categories' => array( 'church-fse' ),
+	'title'      => __( 'Features', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse' ),
 	'keywords'   => array( 'features', 'cards', 'columns' ),
 	'content'    => '
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"64px","bottom":"64px"},"margin":{"top":"0px","bottom":"0px"},"blockGap":"var:preset|spacing|70"}},"layout":{"inherit":true,"type":"constrained"}} -->

@@ -3,16 +3,16 @@
  * Main theme class.
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  */
 
-namespace ChurchFSE;
+namespace LMSCourseFSE;
 
 /**
  * Class Core
  *
- * @package church-fse
+ * @package lmscourse-fse
  */
 class Core {
 	/**
@@ -63,7 +63,7 @@ class Core {
 	 * @return void
 	 */
 	public function setup() {
-		load_theme_textdomain( 'church-fse', CHURCH_FSE_DIR . '/languages' );
+		load_theme_textdomain( 'lmscourse-fse', LMSCOURSE_FSE_DIR . '/languages' );
 
 		$starter_content = new Starter_Content();
 
@@ -85,7 +85,7 @@ class Core {
 			)
 		);
 
-		register_nav_menus( array( 'primary' => esc_html__( 'Primary Menu', 'church-fse' ) ) );
+		register_nav_menus( array( 'primary' => esc_html__( 'Primary Menu', 'lmscourse-fse' ) ) );
 	}
 
 	/**

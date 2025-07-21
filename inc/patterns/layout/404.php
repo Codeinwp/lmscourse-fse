@@ -3,26 +3,26 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: 404
  * title: 404
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: content
  */
 
-use ChurchFSE\Assets_Manager;
+use LMSCourseFSE\Assets_Manager;
 
-$church_fse_img04 = Assets_Manager::get_image_url( 'church-fse-4.webp' );
+$lmscourse_fse_img04 = Assets_Manager::get_image_url( 'lmscourse-fse-4.webp' );
 
 return array(
-	'title'      => __( '404', 'church-fse' ),
-	'categories' => array( 'church-fse' ),
+	'title'      => __( '404', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse' ),
 	'keywords'   => array( 'content' ),
 	'inserter'   => false,
-	'content'    => '<!-- wp:cover {"url":"' . esc_url( $church_fse_img04 ) . '","id":299,"dimRatio":90,"overlayColor":"ti-bg-inv","isUserOverlayColor":true,"minHeight":100,"minHeightUnit":"vh","tagName":"main","align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<main class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-ti-bg-inv-background-color has-background-dim-90 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-299" alt="" src="' . esc_url( $church_fse_img04 ) . '" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"64px","bottom":"64px"},"blockGap":"40px"}},"textColor":"ti-bg","layout":{"type":"constrained"}} -->
+	'content'    => '<!-- wp:cover {"url":"' . esc_url( $lmscourse_fse_img04 ) . '","id":299,"dimRatio":90,"overlayColor":"ti-bg-inv","isUserOverlayColor":true,"minHeight":100,"minHeightUnit":"vh","tagName":"main","align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<main class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-ti-bg-inv-background-color has-background-dim-90 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-299" alt="" src="' . esc_url( $lmscourse_fse_img04 ) . '" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"64px","bottom":"64px"},"blockGap":"40px"}},"textColor":"ti-bg","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-ti-bg-color has-text-color" style="padding-top:64px;padding-bottom:64px"><!-- wp:heading {"textAlign":"center","fontSize":"huge"} -->
 <h2 class="wp-block-heading has-text-align-center has-huge-font-size">Page Not Found - But Hope is Never Lost!</h2>
 <!-- /wp:heading -->

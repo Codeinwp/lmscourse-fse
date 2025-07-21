@@ -3,11 +3,11 @@
  * Admin class.
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  */
 
-namespace ChurchFSE;
+namespace LMSCourseFSE;
 
 /**
  * Admin class.
@@ -52,8 +52,8 @@ class Admin {
 	public function setup_admin_hooks() {
 		add_action( 'admin_notices', array( $this, 'render_welcome_notice' ), 0 );
 		add_action( 'activated_plugin', array( $this, 'after_wpfs_activation' ) );
-		add_action( 'wp_ajax_church_fse_dismiss_welcome_notice', array( $this, 'remove_welcome_notice' ) );
-		add_action( 'wp_ajax_church_fse_set_wpfp_ref', array( $this, 'set_wpfp_ref' ) );
+		add_action( 'wp_ajax_lmscourse_fse_dismiss_welcome_notice', array( $this, 'remove_welcome_notice' ) );
+		add_action( 'wp_ajax_lmscourse_fse_set_wpfp_ref', array( $this, 'set_wpfp_ref' ) );
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_internal_page' ) );
 		add_filter( 'themeisle_sdk_blackfriday_data', array( $this, 'add_black_friday_data' ) );
@@ -78,8 +78,8 @@ class Admin {
 			true,
 			array(),
 			array(
-				'nonce'         => wp_create_nonce( 'church-fse-dismiss-welcome-notice' ),
-				'wpfpRefNonce'  => wp_create_nonce( 'church-fse-set-wpfp-ref' ),
+				'nonce'         => wp_create_nonce( 'lmscourse-fse-dismiss-welcome-notice' ),
+				'wpfpRefNonce'  => wp_create_nonce( 'lmscourse-fse-set-wpfp-ref' ),
 				'ajaxUrl'       => esc_url( admin_url( 'admin-ajax.php' ) ),
 				'wpfpStatus'    => $wpfp_status,
 				'activationUrl' => esc_url(
@@ -95,13 +95,13 @@ class Admin {
 					)
 				),
 				'redirectUrl'   => esc_url( admin_url( 'admin.php?page=wpfs-settings-stripe&onboarding=true' ) ),
-				'activating'    => __( 'Activating', 'church-fse' ) . '&hellip;',
-				'installing'    => __( 'Installing', 'church-fse' ) . '&hellip;',
-				'done'          => __( 'Done', 'church-fse' ),
+				'activating'    => __( 'Activating', 'lmscourse-fse' ) . '&hellip;',
+				'installing'    => __( 'Installing', 'lmscourse-fse' ) . '&hellip;',
+				'done'          => __( 'Done', 'lmscourse-fse' ),
 			)
 		);
 
-		$notice_html  = '<div class="notice notice-info church-fse-welcome-notice">';
+		$notice_html  = '<div class="notice notice-info lmscourse-fse-welcome-notice">';
 		$notice_html .= '<button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button>';
 		$notice_html .= '<div class="notice-content">';
 
@@ -110,35 +110,35 @@ class Admin {
 		$notice_html .= '<h2 class="notice-subtitle">';
 		$notice_html .= '<span class="dashicons dashicons-star-filled"></span>';
 		/* translators: %s: 🎉 emoji */
-		$notice_html .= sprintf( __( 'Accept Donations on Your Church Site %s', 'church-fse' ), '🎉' );
+		$notice_html .= sprintf( __( 'Accept Donations on Your Church Site %s', 'lmscourse-fse' ), '🎉' );
 		$notice_html .= '</h2>';
 
 		$notice_html .= '<h1 class="notice-title">';
 		/* translators: %s: WP Full Pay */
-		$notice_html .= sprintf( __( 'Start Collecting Funds with %s!', 'church-fse' ), '<span>WP Full Pay</span>' );
+		$notice_html .= sprintf( __( 'Start Collecting Funds with %s!', 'lmscourse-fse' ), '<span>WP Full Pay</span>' );
 
 		$notice_html .= '</h1>';
 
-		$notice_html .= '<p class="description">' . __( 'The simplest way to accept donations and payments on your WordPress site. Set up in minutes with no technical knowledge required.', 'church-fse' ) . '</p>';
-		$notice_html .= '<p class="description"><span class="dashicons dashicons-yes"></span><strong>' . __( 'Quick setup', 'church-fse' ) . '</strong> - ' . __( 'Connect to Stripe and create your first donation form in minutes', 'church-fse' ) . '</p>';
-		$notice_html .= '<p class="description"><span class="dashicons dashicons-yes"></span><strong>' . __( 'Multiple payment options', 'church-fse' ) . '</strong> - ' . __( 'One-time and recurring donations with customizable amounts', 'church-fse' ) . '</p>';
+		$notice_html .= '<p class="description">' . __( 'The simplest way to accept donations and payments on your WordPress site. Set up in minutes with no technical knowledge required.', 'lmscourse-fse' ) . '</p>';
+		$notice_html .= '<p class="description"><span class="dashicons dashicons-yes"></span><strong>' . __( 'Quick setup', 'lmscourse-fse' ) . '</strong> - ' . __( 'Connect to Stripe and create your first donation form in minutes', 'lmscourse-fse' ) . '</p>';
+		$notice_html .= '<p class="description"><span class="dashicons dashicons-yes"></span><strong>' . __( 'Multiple payment options', 'lmscourse-fse' ) . '</strong> - ' . __( 'One-time and recurring donations with customizable amounts', 'lmscourse-fse' ) . '</p>';
 
 		$notice_html .= '<div class="actions">';
 
 		/* translators: %s: WP Full Pay */
-		$notice_html .= '<button id="church-fse-install-wpfp" class="button button-primary button-hero">';
+		$notice_html .= '<button id="lmscourse-fse-install-wpfp" class="button button-primary button-hero">';
 		$notice_html .= '<span class="dashicons dashicons-update hidden"></span>';
 		$notice_html .= '<span class="text">';
 		$notice_html .= 'installed' === $wpfp_status ?
 			/* translators: %s: WP Full Pay */
-			sprintf( __( 'Activate %s', 'church-fse' ), 'WP Full Pay' ) :
+			sprintf( __( 'Activate %s', 'lmscourse-fse' ), 'WP Full Pay' ) :
 			/* translators: %s: WP Full Pay */
-			sprintf( __( 'Install & Activate %s', 'church-fse' ), 'WP Full Pay' );
+			sprintf( __( 'Install & Activate %s', 'lmscourse-fse' ), 'WP Full Pay' );
 		$notice_html .= '</span>';
 		$notice_html .= '</button>';
 
 		$notice_html .= '<a href="https://wordpress.org/plugins/wp-full-stripe-free/" target="_blank" class="button button-secondary button-hero">';
-		$notice_html .= '<span>' . __( 'Learn More', 'church-fse' ) . '</span>';
+		$notice_html .= '<span>' . __( 'Learn More', 'lmscourse-fse' ) . '</span>';
 		$notice_html .= '<span class="dashicons dashicons-external"></span>';
 		$notice_html .= '</a>';
 
@@ -146,7 +146,7 @@ class Admin {
 
 		$notice_html .= '</div>';
 
-		$notice_html .= '<img class="wpfp-preview" src="' . esc_url( Assets_Manager::get_image_url( 'welcome-notice.png' ) ) . '" alt="' . esc_attr__( 'WP Full Pay preview', 'church-fse' ) . '"/>';
+		$notice_html .= '<img class="wpfp-preview" src="' . esc_url( Assets_Manager::get_image_url( 'welcome-notice.png' ) ) . '" alt="' . esc_attr__( 'WP Full Pay preview', 'lmscourse-fse' ) . '"/>';
 		$notice_html .= '</div>';
 		$notice_html .= '</div>';
 
@@ -163,7 +163,7 @@ class Admin {
 		if ( ! isset( $_POST['nonce'] ) ) {
 			return;
 		}
-		if ( ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'church-fse-dismiss-welcome-notice' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'lmscourse-fse-dismiss-welcome-notice' ) ) {
 			return;
 		}
 		update_option( Constants::CACHE_KEYS['dismissed-welcome-notice'], 'yes' );
@@ -219,7 +219,7 @@ class Admin {
 		}
 
 		// Dismiss after one week from activation.
-		$activated_time = get_option( 'church_fse_install' );
+		$activated_time = get_option( 'lmscourse_fse_install' );
 
 		if ( ! empty( $activated_time ) && time() - intval( $activated_time ) > WEEK_IN_SECONDS ) {
 			update_option( Constants::CACHE_KEYS['dismissed-welcome-notice'], 'yes' );
@@ -271,11 +271,11 @@ class Admin {
 	 * @return void
 	 */
 	public function set_wpfp_ref() {
-		if ( empty( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'church-fse-set-wpfp-ref' ) ) {
+		if ( empty( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'lmscourse-fse-set-wpfp-ref' ) ) {
 			return;
 		}
 
-		update_option( self::WPFP_REF, 'church-fse' );
+		update_option( self::WPFP_REF, 'lmscourse-fse' );
 
 		wp_send_json_success();
 	}
@@ -291,7 +291,7 @@ class Admin {
 		$config = $configs['default'];
 
 		// translators: %1$s - plugin name, %2$s - discount.
-		$message_template = __( 'Need to accept payments or donations? Try %1$s, built by the same team as your theme — now up to %2$s OFF, for a limited time only.', 'church-fse' );
+		$message_template = __( 'Need to accept payments or donations? Try %1$s, built by the same team as your theme — now up to %2$s OFF, for a limited time only.', 'lmscourse-fse' );
 
 		$config['dismiss']  = true; // Note: Allow dismiss since it appears on `/wp-admin`.
 		$config['message']  = sprintf( $message_template, 'WP Full Pay', '70%' );
@@ -299,10 +299,10 @@ class Admin {
 			array(
 				'utm_term' => 'free',
 			),
-			tsdk_translate_link( tsdk_utmify( 'https://themeisle.link/wpfp-bf', 'bfcm', 'church-fse' ) )
+			tsdk_translate_link( tsdk_utmify( 'https://themeisle.link/wpfp-bf', 'bfcm', 'lmscourse-fse' ) )
 		);
 
-		$configs[ CHURCH_FSE_PRODUCT_SLUG ] = $config;
+		$configs[ LMSCOURSE_FSE_PRODUCT_SLUG ] = $config;
 
 		return $configs;
 	}
@@ -319,6 +319,6 @@ class Admin {
 			return;
 		}
 		
-		do_action( 'themeisle_internal_page', CHURCH_FSE_PRODUCT_SLUG, $screen->id );
+		do_action( 'themeisle_internal_page', LMSCOURSE_FSE_PRODUCT_SLUG, $screen->id );
 	}
 }

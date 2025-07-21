@@ -3,24 +3,24 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: events
  * title: Events
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: events, features
  */
 
-use ChurchFSE\Assets_Manager;
+use LMSCourseFSE\Assets_Manager;
 
-$church_fse_img02 = Assets_Manager::get_image_url( 'church-fse-2.webp' );
-$church_fse_img04 = Assets_Manager::get_image_url( 'church-fse-4.webp' );
-$church_fse_img06 = Assets_Manager::get_image_url( 'church-fse-6.webp' );
+$lmscourse_fse_img02 = Assets_Manager::get_image_url( 'lmscourse-fse-2.webp' );
+$lmscourse_fse_img04 = Assets_Manager::get_image_url( 'lmscourse-fse-4.webp' );
+$lmscourse_fse_img06 = Assets_Manager::get_image_url( 'lmscourse-fse-6.webp' );
 
 return array(
-	'title'      => __( 'Events', 'church-fse' ),
-	'categories' => array( 'church-fse' ),
+	'title'      => __( 'Events', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse' ),
 	'keywords'   => array( 'events', 'features' ),
 	'content'    => '
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"ti-bg-alt","layout":{"type":"constrained"}} -->
@@ -28,7 +28,7 @@ return array(
 <div class="wp-block-group has-ti-bg-background-color has-background" style="border-radius:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"0"}},"border":{"radius":"740px"}}} -->
 <div class="wp-block-columns" style="border-radius:740px"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":299,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . esc_url( $church_fse_img04 ) . '" alt="" class="wp-image-299" style="aspect-ratio:1;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full"><img src="' . esc_url( $lmscourse_fse_img04 ) . '" alt="" class="wp-image-299" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -70,7 +70,7 @@ return array(
 <div class="wp-block-group has-ti-bg-background-color has-background" style="border-radius:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"0"}},"border":{"radius":"740px"}}} -->
 <div class="wp-block-columns" style="border-radius:740px"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":297,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . esc_url( $church_fse_img02 ) . '" alt="" class="wp-image-297" style="aspect-ratio:1;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full"><img src="' . esc_url( $lmscourse_fse_img02 ) . '" alt="" class="wp-image-297" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -112,7 +112,7 @@ return array(
 <div class="wp-block-group has-ti-bg-background-color has-background" style="border-radius:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"0"}},"border":{"radius":"740px"}}} -->
 <div class="wp-block-columns" style="border-radius:740px"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":301,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . esc_url( $church_fse_img06 ) . '" alt="" class="wp-image-301" style="aspect-ratio:1;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full"><img src="' . esc_url( $lmscourse_fse_img06 ) . '" alt="" class="wp-image-301" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

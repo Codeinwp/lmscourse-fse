@@ -3,16 +3,16 @@
  * Block Styles Handler.
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  */
 
-namespace ChurchFSE;
+namespace LMSCourseFSE;
 
 /**
  * Class Block_Styles
  *
- * @package church-fse
+ * @package lmscourse-fse
  */
 class Block_Styles {
 	/**

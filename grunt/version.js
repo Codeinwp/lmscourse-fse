@@ -15,7 +15,7 @@ module.exports = {
 	},
 	functions: {
 		options: {
-			prefix: "CHURCH_FSE_VERSION', '",
+			prefix: "LMSCOURSE_FSE_VERSION', '",
 		},
 		src: 'functions.php',
 	},

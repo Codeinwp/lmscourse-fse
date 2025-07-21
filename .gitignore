@@ -10,7 +10,7 @@ assets/js/build
 *.map
 /vendor/
 
-languages/church-fse.pot
+languages/lmscourse-fse.pot
 
 .DS_Store
 .phpunit.result.cache

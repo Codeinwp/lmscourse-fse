@@ -3,24 +3,24 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: ministries
  * title: Ministries
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: ministries, features, cards
  */
 
-use ChurchFSE\Assets_Manager;
+use LMSCourseFSE\Assets_Manager;
 
-$church_fse_img01 = Assets_Manager::get_image_url( 'church-fse-1.webp' );
-$church_fse_img03 = Assets_Manager::get_image_url( 'church-fse-3.webp' );
-$church_fse_img04 = Assets_Manager::get_image_url( 'church-fse-4.webp' );
+$lmscourse_fse_img01 = Assets_Manager::get_image_url( 'lmscourse-fse-1.webp' );
+$lmscourse_fse_img03 = Assets_Manager::get_image_url( 'lmscourse-fse-3.webp' );
+$lmscourse_fse_img04 = Assets_Manager::get_image_url( 'lmscourse-fse-4.webp' );
 
 return array(
-	'title'      => __( 'Ministries', 'church-fse' ),
-	'categories' => array( 'church-fse' ),
+	'title'      => __( 'Ministries', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse' ),
 	'keywords'   => array( 'ministries', 'features', 'cards' ),
 	'content'    => '
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|80","margin":{"top":"0","bottom":"0"}}},"backgroundColor":"ti-bg-alt","layout":{"type":"constrained"}} -->
@@ -30,7 +30,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Find Your Place at Church FSE</h2>
+<h2 class="wp-block-heading">Find Your Place at LMSCourse FSE</h2>
 <!-- /wp:heading -->
 
 <!-- wp:separator {"backgroundColor":"ti-accent"} -->
@@ -56,7 +56,7 @@ return array(
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":296,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $church_fse_img01 ) . '" alt="" class="wp-image-296" style="border-radius:8px"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img01 ) . '" alt="" class="wp-image-296" style="border-radius:8px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
@@ -74,7 +74,7 @@ return array(
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":299,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $church_fse_img04 ) . '" alt="" class="wp-image-299" style="border-radius:8px"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img04 ) . '" alt="" class="wp-image-299" style="border-radius:8px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
@@ -92,7 +92,7 @@ return array(
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":298,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="' . esc_url( $church_fse_img03 ) . '" alt="" class="wp-image-298" style="border-radius:8px"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="' . esc_url( $lmscourse_fse_img03 ) . '" alt="" class="wp-image-298" style="border-radius:8px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained","justifyContent":"left"}} -->

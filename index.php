@@ -2,5 +2,5 @@
 /**
  * Silence is golden.
  *
- * @package church-fse
+ * @package lmscourse-fse
  */

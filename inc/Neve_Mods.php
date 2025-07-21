@@ -4,16 +4,16 @@
  * This is used to inherit the mods from Neve.
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  */
 
-namespace ChurchFSE;
+namespace LMSCourseFSE;
 
 /**
  * Class Neve_Mods
  *
- * @package church-fse
+ * @package lmscourse-fse
  */
 class Neve_Mods {
 

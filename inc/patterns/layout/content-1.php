@@ -3,22 +3,22 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: content-1
  * title: Content
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: content, columns
  */
 
-use ChurchFSE\Assets_Manager;
+use LMSCourseFSE\Assets_Manager;
 
-$church_fse_img06 = Assets_Manager::get_image_url( 'church-fse-6.webp' );
+$lmscourse_fse_img06 = Assets_Manager::get_image_url( 'lmscourse-fse-6.webp' );
 
 return array(
-	'title'      => __( 'Content', 'church-fse' ),
-	'categories' => array( 'church-fse' ),
+	'title'      => __( 'Content', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse' ),
 	'keywords'   => array( 'content', 'columns' ),
 	'content'    => '
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"64px","bottom":"64px"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
@@ -45,7 +45,7 @@ return array(
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":301,"aspectRatio":"3/4","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $church_fse_img06 ) . '" alt="" class="wp-image-301" style="border-radius:8px;aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img06 ) . '" alt="" class="wp-image-301" style="border-radius:8px;aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

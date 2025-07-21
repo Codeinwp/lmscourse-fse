@@ -3,27 +3,27 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: content-2
  * title: Content 2
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: content, columns, cover
  */
 
-use ChurchFSE\Assets_Manager;
+use LMSCourseFSE\Assets_Manager;
 
-$church_fse_img03 = Assets_Manager::get_image_url( 'church-fse-3.webp' );
-$church_fse_img04 = Assets_Manager::get_image_url( 'church-fse-4.webp' );
-$church_fse_img05 = Assets_Manager::get_image_url( 'church-fse-5.webp' );
+$lmscourse_fse_img03 = Assets_Manager::get_image_url( 'lmscourse-fse-3.webp' );
+$lmscourse_fse_img04 = Assets_Manager::get_image_url( 'lmscourse-fse-4.webp' );
+$lmscourse_fse_img05 = Assets_Manager::get_image_url( 'lmscourse-fse-5.webp' );
 
 return array(
-	'title'      => __( 'Content 2', 'church-fse' ),
-	'categories' => array( 'church-fse' ),
+	'title'      => __( 'Content 2', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse' ),
 	'keywords'   => array( 'content', 'columns', 'cover' ),
 	'content'    => '
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"64px","bottom":"64px"},"blockGap":"64px","margin":{"top":"0px","bottom":"0px"}},"background":{"backgroundImage":{"url":"' . esc_url( $church_fse_img05 ) . '","id":300,"source":"file","title":"church-fse-5"},"backgroundSize":"cover","backgroundPosition":"51% 90%"}},"backgroundColor":"ti-bg-alt","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"64px","bottom":"64px"},"blockGap":"64px","margin":{"top":"0px","bottom":"0px"}},"background":{"backgroundImage":{"url":"' . esc_url( $lmscourse_fse_img05 ) . '","id":300,"source":"file","title":"lmscourse-fse-5"},"backgroundSize":"cover","backgroundPosition":"51% 90%"}},"backgroundColor":"ti-bg-alt","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-ti-bg-alt-background-color has-background" style="margin-top:0px;margin-bottom:0px;padding-top:64px;padding-bottom:64px"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
@@ -53,13 +53,13 @@ return array(
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":298,"aspectRatio":"3/4","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"size-full","style":{"border":{"radius":"8px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $church_fse_img03 ) . '" alt="" class="wp-image-298" style="border-radius:8px;aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img03 ) . '" alt="" class="wp-image-298" style="border-radius:8px;aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":299,"aspectRatio":"3/4","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"size-full","style":{"border":{"radius":"8px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $church_fse_img04 ) . '" alt="" class="wp-image-299" style="border-radius:8px;aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img04 ) . '" alt="" class="wp-image-299" style="border-radius:8px;aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

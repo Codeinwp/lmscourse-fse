@@ -3,22 +3,22 @@
  * Assets manager class.
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  */
 
-namespace ChurchFSE;
+namespace LMSCourseFSE;
 
 /**
  * Class Assets_Manager
  *
- * @package church-fse
+ * @package lmscourse-fse
  */
 class Assets_Manager {
 	const ASSETS_SLUGS = array(
-		'frontend-css'   => 'church-fse-style',
-		'editor-css'     => 'church-fse-editor',
-		'welcome-notice' => 'church-fse-welcome-notice',
+		'frontend-css'   => 'lmscourse-fse-style',
+		'editor-css'     => 'lmscourse-fse-editor',
+		'welcome-notice' => 'lmscourse-fse-welcome-notice',
 	);
 
 	const AVAILABLE_THEME_FONTS = array(
@@ -45,9 +45,9 @@ class Assets_Manager {
 	 * @return void
 	 */
 	public static function enqueue_style( string $handle, string $file, array $dependencies = array() ) {
-		$uri = CHURCH_FSE_URL . 'assets/css/build/' . $file . '.css';
+		$uri = LMSCOURSE_FSE_URL . 'assets/css/build/' . $file . '.css';
 
-		wp_register_style( $handle, esc_url( $uri ), $dependencies, CHURCH_FSE_VERSION );
+		wp_register_style( $handle, esc_url( $uri ), $dependencies, LMSCOURSE_FSE_VERSION );
 		wp_style_add_data( $handle, 'rtl', 'replace' );
 		wp_enqueue_style( $handle );
 
@@ -70,13 +70,13 @@ class Assets_Manager {
 	 *
 	 * @return void
 	 */
-	public static function enqueue_script( string $handle, string $file, bool $in_footer = true, array $dependencies = array(), array $localization = array(), $localization_object_name = 'churchFSEData' ) {
-		$uri = CHURCH_FSE_URL . 'assets/js/build/' . $file . '.js';
-		$php = CHURCH_FSE_DIR . 'assets/js/build/' . $file . '.asset.php';
+	public static function enqueue_script( string $handle, string $file, bool $in_footer = true, array $dependencies = array(), array $localization = array(), $localization_object_name = 'lmscourseFSEData' ) {
+		$uri = LMSCOURSE_FSE_URL . 'assets/js/build/' . $file . '.js';
+		$php = LMSCOURSE_FSE_DIR . 'assets/js/build/' . $file . '.asset.php';
 
 		$deps = is_file( $php ) ? include $php : array(
 			'dependencies' => array(),
-			'version'      => CHURCH_FSE_VERSION,
+			'version'      => LMSCOURSE_FSE_VERSION,
 		);
 
 
@@ -91,7 +91,7 @@ class Assets_Manager {
 		}
 
 		wp_enqueue_script( $handle );
-		wp_set_script_translations( $handle, 'church-fse' );
+		wp_set_script_translations( $handle, 'lmscourse-fse' );
 	}
 
 	/**
@@ -102,7 +102,7 @@ class Assets_Manager {
 	 * @return string
 	 */
 	public static function get_image_url( string $file ): string {
-		return CHURCH_FSE_URL . 'assets/img/' . $file;
+		return LMSCOURSE_FSE_URL . 'assets/img/' . $file;
 	}
 
 

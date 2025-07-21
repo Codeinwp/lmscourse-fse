@@ -3,16 +3,16 @@
  * Starter content.
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  */
 
-namespace ChurchFSE;
+namespace LMSCourseFSE;
 
 /**
  * Class Starter Content
  *
- * @package church-fse
+ * @package lmscourse-fse
  */
 class Starter_Content {
 	const HOME_SLUG = 'home';

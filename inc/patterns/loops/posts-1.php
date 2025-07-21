@@ -3,18 +3,18 @@
  * Pattern
  *
  * @author Themeisle
- * @package church-fse
+ * @package lmscourse-fse
  * @since 1.0.0
  *
  * slug: posts-1
  * title: Posts 1
- * categories: ChurchFSE
+ * categories: LMSCourseFSE
  * keywords: posts, loop, blog
  */
 
 return array(
-	'title'      => __( 'Posts', 'church-fse' ),
-	'categories' => array( 'church-fse', 'posts' ),
+	'title'      => __( 'Posts', 'lmscourse-fse' ),
+	'categories' => array( 'lmscourse-fse', 'posts' ),
 	'keywords'   => array( 'posts', 'loop', 'blog' ),
 	'content'    => '
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|80","margin":{"top":"0","bottom":"0"}}},"backgroundColor":"ti-bg-alt","layout":{"type":"constrained"}} -->

@@ -2,10 +2,10 @@
 /**
  * PHPUnit bootstrap file
  *
- * @package church-fse
+ * @package lmscourse-fse
  */
 
-define( 'CHURCH_FSE_IGNORE_SOURCE_CHECK', true );
+define( 'LMSCOURSE_FSE_IGNORE_SOURCE_CHECK', true );
 
 $_tests_dir = getenv( 'WP_TESTS_DIR' );
 
