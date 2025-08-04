@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "title": "Forest",
+  "title": "Purple Rain",
   "version": 2,
   "settings": {
     "color": {
@@ -17,22 +17,22 @@
         },
         {
           "slug": "ti-accent",
-          "color": "#4D9B67",
+          "color": "#5F4E9C",
           "name": "Accent"
         },
         {
           "slug": "ti-accent-secondary",
-          "color": "#396D4A",
+          "color": "#4E3E85",
           "name": "Accent Secondary"
         },
         {
           "slug": "ti-bg-inv",
-          "color": "#0F0F0F",
+          "color": "#2B2247",
           "name": "Background Dark"
         },
         {
           "slug": "ti-bg-alt",
-          "color": "#F4F4F4",
+          "color": "#F9F7F7",
           "name": "Background Alt"
         },
         {
@@ -47,7 +47,7 @@
     "elements": {
       "heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--albert-sans)"
+          "fontFamily": "var(--wp--preset--font-family--fraunces)"
         }
       },
       "h1": {
