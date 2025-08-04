@@ -1,13 +1,13 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "title": "Violet",
+  "title": "Petrol Sky",
   "version": 2,
   "settings": {
     "color": {
       "palette": [
         {
           "slug": "ti-bg",
-          "color": "#181818",
+          "color": "#151515",
           "name": "Background"
         },
         {
@@ -17,12 +17,12 @@
         },
         {
           "slug": "ti-accent",
-          "color": "#996FB2",
+          "color": "#07979C",
           "name": "Accent"
         },
         {
           "slug": "ti-accent-secondary",
-          "color": "#81529D",
+          "color": "#077E82",
           "name": "Accent Secondary"
         },
         {
@@ -37,7 +37,7 @@
         },
         {
           "slug": "ti-fg-alt",
-          "color": "#FFFFFA",
+          "color": "#F3F3F3",
           "name": "Foreground Alt"
         }
       ]
@@ -47,22 +47,22 @@
     "elements": {
       "heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--playfair-display)"
+          "fontFamily": "var(--wp--preset--font-family--outfit)"
         }
       },
       "h1": {
         "typography": {
-          "fontWeight": "800"
+          "fontWeight": "600"
         }
       },
       "h2": {
         "typography": {
-          "fontWeight": "800"
+          "fontWeight": "600"
         }
       },
       "h3": {
         "typography": {
-          "fontWeight": "800"
+          "fontWeight": "600"
         }
       },
       "h4": {
@@ -82,7 +82,7 @@
       }
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--source-sans-pro)"
+      "fontFamily": "var(--wp--preset--font-family--outfit)"
     }
   }
 }
