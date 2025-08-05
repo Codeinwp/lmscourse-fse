@@ -40,3 +40,6 @@ return array(
 <p></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
+
+',
+);

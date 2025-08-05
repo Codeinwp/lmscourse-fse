@@ -22,7 +22,7 @@ return array(
 	<!-- wp:group {"metadata":{"name":"features-1"},"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|80"}},"backgroundColor":"ti-bg-alt","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-ti-bg-alt-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|40"}},"border":{"left":{"color":"var:preset|color|ti-accent","width":"8px"},"top":[],"right":[],"bottom":[]}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--ti-accent);border-left-width:8px;padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"align":"wide"} -->
-<h2 class="wp-block-heading alignwide">What's Included in the Course</h2>
+<h2 class="wp-block-heading alignwide">What\'s Included in the Course</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -76,3 +76,6 @@ return array(
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
+
+',
+);

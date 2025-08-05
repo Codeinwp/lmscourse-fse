@@ -34,3 +34,6 @@ return array(
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:cover -->
+
+',
+);

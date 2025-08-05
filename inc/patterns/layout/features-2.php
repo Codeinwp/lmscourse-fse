@@ -21,7 +21,7 @@ return array(
 
 <!-- wp:group {"metadata":{"name":"Features-2"},"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|80"}},"backgroundColor":"ti-bg-alt","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-ti-bg-alt-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"center","fontSize":"huge"} -->
-<h2 class="wp-block-heading has-text-align-center has-huge-font-size">What's Included</h2>
+<h2 class="wp-block-heading has-text-align-center has-huge-font-size">What\'s Included</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":null,"minimumColumnWidth":"17rem"}} -->
@@ -144,3 +144,6 @@ return array(
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
+
+',
+);

@@ -104,3 +104,6 @@ return array(
 <!-- /wp:group --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
+
+',
+);

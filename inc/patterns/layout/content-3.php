@@ -94,3 +94,6 @@ return array(
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
+
+',
+);
