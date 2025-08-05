@@ -12,7 +12,6 @@
  * keywords: Pricing, columns
  */
 
-
 return array(
 	'title'      => __( 'Pricing 1', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),

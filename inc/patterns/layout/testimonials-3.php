@@ -12,7 +12,6 @@
  * keywords: testimonials, grid
  */
 
-
 return array(
 	'title'      => __( 'Testimonials 3', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),

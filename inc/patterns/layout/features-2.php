@@ -12,7 +12,6 @@
  * keywords: features, grid
  */
 
-
 return array(
 	'title'      => __( 'Features 2', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),

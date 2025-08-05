@@ -19,7 +19,7 @@ $lmscourse_fse_img07 = Assets_Manager::get_image_url( 'theme-img-07.webp' );
 return array(
 	'title'      => __( 'Content 1', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),
-	'keywords'   => array( 'content'),
+	'keywords'   => array( 'content' ),
 	'content'    => '
 
 <!-- wp:columns {"metadata":{"name":"content-1"},"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"0"},"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|ti-fg-alt"}}}},"backgroundColor":"ti-bg-inv","textColor":"ti-fg-alt"} -->

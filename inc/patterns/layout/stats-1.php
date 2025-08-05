@@ -12,7 +12,6 @@
  * keywords: stats, columns, metrics
  */
 
-
 return array(
 	'title'      => __( 'Stats 1', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),

@@ -12,11 +12,10 @@
  * keywords: stats, columns, metrics
  */
 
-
 return array(
 	'title'      => __( 'Stats 2', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),
-	'keywords'   => array( 'stats', 'columns','metrics' ),
+	'keywords'   => array( 'stats', 'columns', 'metrics' ),
 	'content'    => '
 
 <!-- wp:group {"metadata":{"name":"stats-2"},"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|80"}},"backgroundColor":"ti-bg-alt","layout":{"type":"constrained"}} -->

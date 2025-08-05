@@ -12,7 +12,6 @@
  * keywords: content, FAQ
  */
 
-
 return array(
 	'title'      => __( 'FAQs', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),
