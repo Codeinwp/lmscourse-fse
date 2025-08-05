@@ -6,43 +6,31 @@
  * @package lmscourse-fse
  * @since 1.0.0
  *
- * slug: CTA-3
- * title: Call to action 3
+ * slug: cta-3
+ * title: CTA 3
  * categories: LMSCourseFSE
- * keywords: cta, cover, donations
+ * keywords: CTA
  */
 
-use LMSCourseFSE\Assets_Manager;
-
-$lmscourse_fse_img02 = Assets_Manager::get_image_url( 'lmscourse-fse-2.webp' );
 
 return array(
-	'title'      => __( 'Call to Action 3', 'lmscourse-fse' ),
+	'title'      => __( 'CTA 3', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),
-	'keywords'   => array( 'cta', 'cover', 'donation' ),
+	'keywords'   => array( 'CTA' ),
 	'content'    => '
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"' . esc_url( $lmscourse_fse_img02 ) . '","id":297,"hasParallax":true,"dimRatio":0,"customOverlayColor":"#bcbebf","isUserOverlayColor":false,"isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light has-parallax" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--40)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#bcbebf"></span><div class="wp-block-cover__image-background wp-image-297 has-parallax" style="background-position:50% 50%;background-image:url(' . esc_url( $lmscourse_fse_img02 ) . ')"></div><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"dimensions":{"minHeight":""},"border":{"radius":"16px"},"elements":{"link":{"color":{"text":"var:preset|color|ti-fg-alt"}}}},"backgroundColor":"ti-accent","textColor":"ti-fg-alt","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-ti-fg-alt-color has-ti-accent-background-color has-text-color has-background has-link-color" style="border-radius:16px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--50)"><!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"}},"fontSize":"small"} -->
-<p class="has-text-align-center has-small-font-size" style="font-style:normal;font-weight:700;text-transform:uppercase"><strong>Sanctus Ipsum</strong></p>
-<!-- /wp:paragraph -->
 
-<!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">Give with a Generous Heart</h2>
+<!-- wp:cover {"url":"https://lmscourse-fse.instawp.xyz/wp-content/uploads/2025/07/theme-img-010-1024x683.webp","id":155,"hasParallax":true,"dimRatio":80,"overlayColor":"ti-bg-inv","isUserOverlayColor":true,"minHeight":700,"minHeightUnit":"px","contentPosition":"center center","sizeSlug":"large","metadata":{"name":"CTA-3"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|60","margin":{"top":"0","bottom":"0"}},"color":{"duotone":"unset"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull has-parallax" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50);min-height:700px"><div class="wp-block-cover__image-background wp-image-155 size-large has-parallax" style="background-position:50% 50%;background-image:url(https://lmscourse-fse.instawp.xyz/wp-content/uploads/2025/07/theme-img-010-1024x683.webp)"></div><span aria-hidden="true" class="wp-block-cover__background has-ti-bg-inv-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","align":"wide","fontSize":"huge"} -->
+<h2 class="wp-block-heading alignwide has-text-align-center has-huge-font-size">Ready to Start Learning?</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Gloria in excelsis Deo, et pax hominibus bonae voluntatis. Benediximus te, adoramus te, glorificamus nomen tuum in saecula saeculorum. Amen.</p>
+<!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+<p class="has-text-align-center has-medium-font-size">Pickum chordis dolor sit fretboard, consectetur scale-tur adipiscing neck. Solo elit string-tremolo, slide do re mi.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"textAlign":"center","backgroundColor":"ti-accent-secondary","width":50,"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-fill"><a class="wp-block-button__link has-ti-accent-secondary-background-color has-background has-text-align-center wp-element-button">Make a Donation</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill","fontSize":"medium"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-medium-font-size has-custom-font-size wp-element-button">Enroll Now</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:group -->
-        ',
-);
+<!-- /wp:buttons --></div></div>
+<!-- /wp:cover -->

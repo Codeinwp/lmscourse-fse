@@ -6,45 +6,31 @@
  * @package lmscourse-fse
  * @since 1.0.0
  *
- * slug: CTA-1
- * title: Call to action 1
+ * slug: cta-1
+ * title: CTA 1
  * categories: LMSCourseFSE
- * keywords: cta, social
+ * keywords: CTA
  */
 
-use LMSCourseFSE\Assets_Manager;
 
 return array(
-	'title'      => __( 'Call to Action 1', 'lmscourse-fse' ),
+	'title'      => __( 'CTA 1', 'lmscourse-fse' ),
 	'categories' => array( 'lmscourse-fse' ),
-	'keywords'   => array( 'cta', 'social' ),
+	'keywords'   => array( 'CTA' ),
 	'content'    => '
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"},"blockGap":"var:preset|spacing|80","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"},"elements":{"link":{"color":{"text":"var:preset|color|ti-accent"}}}},"textColor":"ti-accent","fontSize":"small"} -->
-<p class="has-text-align-center has-ti-accent-color has-text-color has-link-color has-small-font-size" style="font-style:normal;font-weight:700;text-transform:uppercase"><strong>Sanctus Ipsum</strong></p>
-<!-- /wp:paragraph -->
 
-<!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">Title goes here</h2>
+<!-- wp:cover {"url":"https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-04-1024x683.webp","id":16,"dimRatio":50,"overlayColor":"black","isUserOverlayColor":true,"minHeight":700,"minHeightUnit":"px","contentPosition":"center center","sizeSlug":"large","metadata":{"name":"CTA 1"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|60","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50);min-height:700px"><img class="wp-block-cover__image-background wp-image-16 size-large" alt="" src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-04-1024x683.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","align":"wide","fontSize":"huge"} -->
+<h2 class="wp-block-heading alignwide has-text-align-center has-huge-font-size">Ready to Start Learning?</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Gloria in excelsis Deo, et pax hominibus bonae voluntatis. Benediximus te, adoramus te, glorificamus nomen tuum in saecula saeculorum. Amen.</p>
+<!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+<p class="has-text-align-center has-medium-font-size">Pickum chordis dolor sit fretboard, consectetur scale-tur adipiscing neck. Solo elit string-tremolo, slide do re mi sed tempo eiusmod strumming aliqua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"iconColor":"ti-fg-alt","iconColorValue":"var(\u002d\u002dnv-text-dark-bg, #FBFBFB)","iconBackgroundColor":"ti-accent-secondary","iconBackgroundColorValue":"#b5431f","size":"has-large-icon-size","layout":{"type":"flex","justifyContent":"center"}} -->
-<ul class="wp-block-social-links has-large-icon-size has-icon-color has-icon-background-color"><!-- wp:social-link {"url":"#","service":"x"} /-->
-
-<!-- wp:social-link {"url":"#","service":"mail"} /-->
-
-<!-- wp:social-link {"url":"#","service":"youtube"} /-->
-
-<!-- wp:social-link {"url":"#","service":"instagram"} /-->
-
-<!-- wp:social-link {"url":"#","service":"bluesky"} /--></ul>
-<!-- /wp:social-links --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-        ',
-);
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button">Enroll Now</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:cover -->
