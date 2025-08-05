@@ -135,7 +135,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">“Finally, a course that doesn’t overwhelm you with music theory. Just practical tips that work.”</p>
+<p class="has-text-align-center has-large-font-size">“Finally, a course that doesn\'t overwhelm you with music theory. Just practical tips that work.”</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->

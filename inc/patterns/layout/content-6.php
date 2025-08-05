@@ -9,9 +9,13 @@
  * slug: content-6
  * title: Content 6
  * categories: LMSCourseFSE
- * keywords: content, course
+ * keywords: content, testimonials
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_testimonial03 = Assets_Manager::get_image_url( 'testimonial-3.webp' );
+$lmscourse_fse_testimonial04 = Assets_Manager::get_image_url( 'testimonial-4.webp' );
 
 return array(
 	'title'      => __( 'Content 6', 'lmscourse-fse' ),
@@ -25,7 +29,7 @@ return array(
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|40"}},"border":{"left":{"color":"var:preset|color|ti-accent","width":"8px"},"top":[],"right":[],"bottom":[]}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-left-color:var(--wp--preset--color--ti-accent);border-left-width:8px;padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.1"}},"fontSize":"huge"} -->
-<h2 class="wp-block-heading has-huge-font-size" style="line-height:1.1">What You’ll Learn in This Course</h2>
+<h2 class="wp-block-heading has-huge-font-size" style="line-height:1.1">What You\'ll Learn in This Course</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -47,7 +51,7 @@ return array(
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":92,"width":"100px","height":"100px","scale":"contain","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-default","style":{"border":{"radius":"100px"}}} -->
-<figure class="wp-block-image aligncenter size-full is-resized has-custom-border is-style-default"><img src="https://lmscourse-fse.instawp.xyz/wp-content/uploads/2025/07/testimonial-3.webp" alt="" class="wp-image-92" style="border-radius:100px;object-fit:contain;width:100px;height:100px"/></figure>
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border is-style-default"><img src="' . esc_url( $lmscourse_fse_testimonial03 ) . '" alt="" class="wp-image-92" style="border-radius:100px;object-fit:contain;width:100px;height:100px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -71,7 +75,7 @@ return array(
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":238,"width":"100px","height":"100px","scale":"contain","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-default","style":{"border":{"radius":"100px"}}} -->
-<figure class="wp-block-image aligncenter size-full is-resized has-custom-border is-style-default"><img src="https://lmscourse-fse.instawp.xyz/wp-content/uploads/2025/07/testimonial-4.webp" alt="" class="wp-image-238" style="border-radius:100px;object-fit:contain;width:100px;height:100px"/></figure>
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border is-style-default"><img src="' . esc_url( $lmscourse_fse_testimonial04 ) . '" alt="" class="wp-image-238" style="border-radius:100px;object-fit:contain;width:100px;height:100px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -149,7 +153,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"left","level":3} -->
-<h3 class="wp-block-heading has-text-align-left">Applying What You’ve Learned</h3>
+<h3 class="wp-block-heading has-text-align-left">Applying What You\'ve Learned</h3>
 <!-- /wp:heading -->
 
 <!-- wp:list {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->

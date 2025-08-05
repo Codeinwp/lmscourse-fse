@@ -12,6 +12,11 @@
  * keywords: features, content, grid
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_icon03 = Assets_Manager::get_image_url( 'theme-icon-03.webp' );
+$lmscourse_fse_icon04 = Assets_Manager::get_image_url( 'theme-icon-04.webp' );
+$lmscourse_fse_icon05 = Assets_Manager::get_image_url( 'theme-icon-05.webp' );
 
 return array(
 	'title'      => __( 'Features 1', 'lmscourse-fse' ),
@@ -30,7 +35,7 @@ return array(
 <div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"radius":"16px"}},"backgroundColor":"ti-accent","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group has-ti-accent-background-color has-background" style="border-radius:16px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":13,"width":"52px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-icon-03.webp" alt="" class="wp-image-13" style="width:52px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( $lmscourse_fse_icon03 ) . '" alt="" class="wp-image-13" style="width:52px;height:auto"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -46,7 +51,7 @@ return array(
 <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"radius":"16px"}},"backgroundColor":"ti-accent","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group has-ti-accent-background-color has-background" style="border-radius:16px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":11,"width":"52px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-icon-04.webp" alt="" class="wp-image-11" style="width:52px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( $lmscourse_fse_icon04 ) . '" alt="" class="wp-image-11" style="width:52px;height:auto"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -62,7 +67,7 @@ return array(
 <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"radius":"16px"}},"backgroundColor":"ti-accent","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group has-ti-accent-background-color has-background" style="border-radius:16px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":17,"width":"52px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-icon-05.webp" alt="" class="wp-image-17" style="width:52px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( $lmscourse_fse_icon05 ) . '" alt="" class="wp-image-17" style="width:52px;height:auto"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 

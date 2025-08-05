@@ -7,11 +7,15 @@
  * @since 1.0.0
  *
  * slug: content-7
- * title: Content
+ * title: Content 7
  * categories: LMSCourseFSE
- * keywords: content, columns, course
+ * keywords: content, cover, columns
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_img06 = Assets_Manager::get_image_url( 'theme-img-06.webp' );
+$lmscourse_fse_img05 = Assets_Manager::get_image_url( 'theme-img-05.webp' );
 
 return array(
 	'title'      => __( 'Content 7', 'lmscourse-fse' ),
@@ -32,8 +36,8 @@ return array(
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-06.webp","id":19,"dimRatio":30,"overlayColor":"black","isUserOverlayColor":true,"minHeight":50,"minHeightUnit":"vh","contentPosition":"bottom left","sizeSlug":"full","style":{"spacing":{"blockGap":"var:preset|spacing|50"},"elements":{"link":{"color":{"text":"var:preset|color|ti-fg-alt"}}},"border":{"radius":"12px"}},"textColor":"ti-fg-alt","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover has-custom-content-position is-position-bottom-left has-ti-fg-alt-color has-text-color has-link-color" style="border-radius:12px;min-height:50vh"><img class="wp-block-cover__image-background wp-image-19 size-full" alt="" src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-06.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim-30 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"' . esc_url( $lmscourse_fse_img06 ) . '","id":19,"dimRatio":30,"overlayColor":"black","isUserOverlayColor":true,"minHeight":50,"minHeightUnit":"vh","contentPosition":"bottom left","sizeSlug":"full","style":{"spacing":{"blockGap":"var:preset|spacing|50"},"elements":{"link":{"color":{"text":"var:preset|color|ti-fg-alt"}}},"border":{"radius":"12px"}},"textColor":"ti-fg-alt","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-left has-ti-fg-alt-color has-text-color has-link-color" style="border-radius:12px;min-height:50vh"><img class="wp-block-cover__image-background wp-image-19 size-full" alt="" src="' . esc_url( $lmscourse_fse_img06 ) . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim-30 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
 <h3 class="wp-block-heading has-x-large-font-size">Essential Guitar for Absolute Beginners</h3>
 <!-- /wp:heading -->
 
@@ -50,8 +54,8 @@ return array(
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-05.webp","id":18,"dimRatio":30,"overlayColor":"black","isUserOverlayColor":true,"minHeight":50,"minHeightUnit":"vh","contentPosition":"bottom left","sizeSlug":"full","style":{"spacing":{"blockGap":"var:preset|spacing|50"},"elements":{"link":{"color":{"text":"var:preset|color|ti-fg-alt"}}},"border":{"radius":"12px"}},"textColor":"ti-fg-alt","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover has-custom-content-position is-position-bottom-left has-ti-fg-alt-color has-text-color has-link-color" style="border-radius:12px;min-height:50vh"><img class="wp-block-cover__image-background wp-image-18 size-full" alt="" src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-05.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim-30 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"left","level":3,"fontSize":"x-large"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"' . esc_url( $lmscourse_fse_img05 ) . '","id":18,"dimRatio":30,"overlayColor":"black","isUserOverlayColor":true,"minHeight":50,"minHeightUnit":"vh","contentPosition":"bottom left","sizeSlug":"full","style":{"spacing":{"blockGap":"var:preset|spacing|50"},"elements":{"link":{"color":{"text":"var:preset|color|ti-fg-alt"}}},"border":{"radius":"12px"}},"textColor":"ti-fg-alt","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-left has-ti-fg-alt-color has-text-color has-link-color" style="border-radius:12px;min-height:50vh"><img class="wp-block-cover__image-background wp-image-18 size-full" alt="" src="' . esc_url( $lmscourse_fse_img05 ) . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim-30 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"left","level":3,"fontSize":"x-large"} -->
 <h3 class="wp-block-heading has-text-align-left has-x-large-font-size">Play Your First Songs (Beginner Songbook)</h3>
 <!-- /wp:heading -->
 

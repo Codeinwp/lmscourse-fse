@@ -75,6 +75,7 @@ class Block_Patterns {
 			'templates/single-post-cover',
 			'templates/archive-cover',
 			'templates/archive-list',
+			'templates/404',
 
 			// layout patterns.
 			'layout/content-1',

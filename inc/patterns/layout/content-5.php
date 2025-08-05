@@ -7,11 +7,14 @@
  * @since 1.0.0
  *
  * slug: content-5
- * title: Content
+ * title: Content 5
  * categories: LMSCourseFSE
- * keywords: content, columns, course
+ * keywords: content, columns
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_img07 = Assets_Manager::get_image_url( 'theme-img-07.webp' );
 
 return array(
 	'title'      => __( 'Content 5', 'lmscourse-fse' ),
@@ -49,7 +52,7 @@ return array(
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":21,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-07.webp" alt="" class="wp-image-21" style="border-radius:8px;aspect-ratio:1;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img07 ) . '" alt="" class="wp-image-21" style="border-radius:8px;aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -109,7 +112,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"left","level":3} -->
-<h3 class="wp-block-heading has-text-align-left">Applying What You’ve Learned</h3>
+<h3 class="wp-block-heading has-text-align-left">Applying What You\'ve Learned</h3>
 <!-- /wp:heading -->
 
 <!-- wp:list {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->

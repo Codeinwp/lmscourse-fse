@@ -9,9 +9,12 @@
  * slug: hero-2
  * title: Hero 2
  * categories: LMSCourseFSE
- * keywords: Hero
+ * keywords: hero, columns
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_img03 = Assets_Manager::get_image_url( 'theme-img-03.webp' );
 
 return array(
 	'title'      => __( 'Hero 2', 'lmscourse-fse' ),
@@ -23,7 +26,7 @@ return array(
 <div class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--40)"><span aria-hidden="true" class="wp-block-cover__background has-ti-bg-inv-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":142,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"16px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="https://lmscourse-fse.instawp.xyz/wp-content/uploads/2025/07/theme-img-03.webp" alt="" class="wp-image-142" style="border-radius:16px"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img03 ) . '" alt="" class="wp-image-142" style="border-radius:16px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

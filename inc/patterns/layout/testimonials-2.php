@@ -12,6 +12,9 @@
  * keywords: content, columns
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_testimonial02 = Assets_Manager::get_image_url( 'testimonial-2.webp' );
 
 return array(
 	'title'      => __( 'Testimonials 2', 'lmscourse-fse' ),
@@ -23,7 +26,7 @@ return array(
 <div class="wp-block-group alignfull has-ti-bg-alt-background-color has-background" style="min-height:30em;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"align":"wide","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":24,"width":"90px","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-rounded","style":{"border":{"radius":"999px"}}} -->
-<figure class="wp-block-image size-full is-resized has-custom-border is-style-rounded"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/testimonial-2.webp" alt="" class="wp-image-24" style="border-radius:999px;aspect-ratio:1;object-fit:cover;width:90px"/></figure>
+<figure class="wp-block-image size-full is-resized has-custom-border is-style-rounded"><img src="' . esc_url( $lmscourse_fse_testimonial02 ) . '" alt="" class="wp-image-24" style="border-radius:999px;aspect-ratio:1;object-fit:cover;width:90px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 

@@ -12,6 +12,9 @@
  * keywords: content
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_img07 = Assets_Manager::get_image_url( 'theme-img-07.webp' );
 
 return array(
 	'title'      => __( 'Content 1', 'lmscourse-fse' ),
@@ -68,7 +71,7 @@ return array(
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":21,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"16px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-07.webp" alt="" class="wp-image-21" style="border-radius:16px;aspect-ratio:1;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img07 ) . '" alt="" class="wp-image-21" style="border-radius:16px;aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

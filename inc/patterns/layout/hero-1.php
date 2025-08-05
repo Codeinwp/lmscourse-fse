@@ -12,6 +12,9 @@
  * keywords: hero, cover
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_img010 = Assets_Manager::get_image_url( 'theme-img-010.webp' );
 
 return array(
 	'title'      => __( 'Hero 1', 'lmscourse-fse' ),
@@ -19,8 +22,8 @@ return array(
 	'keywords'   => array( 'hero', 'cover' ),
 	'content'    => '
 
-<!-- wp:cover {"url":"https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-010-1024x683.webp","id":29,"dimRatio":50,"overlayColor":"black","isUserOverlayColor":true,"minHeight":700,"minHeightUnit":"px","contentPosition":"center center","sizeSlug":"large","metadata":{"name":"hero 1"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50);min-height:700px"><img class="wp-block-cover__image-background wp-image-29 size-large" alt="" src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-010-1024x683.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
+<!-- wp:cover {"url":"' . esc_url( $lmscourse_fse_img010 ) . '","id":29,"dimRatio":50,"overlayColor":"black","isUserOverlayColor":true,"minHeight":700,"minHeightUnit":"px","contentPosition":"center center","sizeSlug":"large","metadata":{"name":"hero 1"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50);min-height:700px"><img class="wp-block-cover__image-background wp-image-29 size-large" alt="" src="' . esc_url( $lmscourse_fse_img010 ) . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|luminous-vivid-amber"}}}},"textColor":"luminous-vivid-amber","fontSize":"medium"} -->

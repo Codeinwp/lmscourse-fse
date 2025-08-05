@@ -12,6 +12,10 @@
  * keywords: testimonials
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_testimonial02 = Assets_Manager::get_image_url( 'testimonial-2.webp' );
+$lmscourse_fse_testimonial03 = Assets_Manager::get_image_url( 'testimonial-3.webp' );
 
 return array(
 	'title'      => __( 'Testimonials 1', 'lmscourse-fse' ),
@@ -29,7 +33,7 @@ return array(
 <!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"28rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":24,"width":"80px","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-rounded","style":{"border":{"radius":"100px"},"layout":{"selfStretch":"fit","flexSize":null}}} -->
-<figure class="wp-block-image size-full is-resized has-custom-border is-style-rounded"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/testimonial-2.webp" alt="" class="wp-image-24" style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:80px"/></figure>
+<figure class="wp-block-image size-full is-resized has-custom-border is-style-rounded"><img src="' . esc_url( $lmscourse_fse_testimonial02 ) . '" alt="" class="wp-image-24" style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:80px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
@@ -49,7 +53,7 @@ return array(
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":25,"width":"80px","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-default","style":{"border":{"radius":"100px"}}} -->
-<figure class="wp-block-image size-full is-resized has-custom-border is-style-default"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/testimonial-3.webp" alt="" class="wp-image-25" style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:80px"/></figure>
+<figure class="wp-block-image size-full is-resized has-custom-border is-style-default"><img src="' . esc_url( $lmscourse_fse_testimonial03 ) . '" alt="" class="wp-image-25" style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:80px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->

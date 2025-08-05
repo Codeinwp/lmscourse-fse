@@ -12,6 +12,10 @@
  * keywords: content, columns
  */
 
+use LMSCourseFSE\Assets_Manager;
+
+$lmscourse_fse_img06 = Assets_Manager::get_image_url( 'theme-img-06.webp' );
+$lmscourse_fse_img05 = Assets_Manager::get_image_url( 'theme-img-05.webp' );
 
 return array(
 	'title'      => __( 'Content 2', 'lmscourse-fse' ),
@@ -30,7 +34,7 @@ return array(
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":19,"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"12px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-06.webp" alt="" class="wp-image-19" style="border-radius:12px;aspect-ratio:4/3;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img06 ) . '" alt="" class="wp-image-19" style="border-radius:12px;aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -64,7 +68,7 @@ return array(
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":18,"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"12px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="https://guitar-course.instawp.xyz/wp-content/uploads/2025/07/theme-img-05.webp" alt="" class="wp-image-18" style="border-radius:12px;aspect-ratio:4/3;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="' . esc_url( $lmscourse_fse_img05 ) . '" alt="" class="wp-image-18" style="border-radius:12px;aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
