@@ -36,24 +36,7 @@ class Block_Styles {
 	 * @return void
 	 */
 	public function run() {
-		$this->setup_properties();
 		$this->add_block_styles();
-	}
-
-	/**
-	 * Setup class properties.
-	 *
-	 * @return void
-	 */
-	private function setup_properties() {
-		$this->styles = array(
-			'core/categories' => array(
-				array(
-					'name'  => 'raft-pills',
-					'label' => esc_html__( 'Pills', 'raft' ),
-				),
-			),
-		);
 	}
 
 	/**
