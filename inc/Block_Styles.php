@@ -26,7 +26,7 @@ class Block_Styles {
 	 * Block Styles constructor.
 	 */
 	public function __construct() {
-
+		$this->styles = array();
 		add_action( 'init', array( $this, 'run' ) );
 	}
 
@@ -36,7 +36,6 @@ class Block_Styles {
 	 * @return void
 	 */
 	public function run() {
-		$this->styles = array();
 		$this->add_block_styles();
 	}
 
