@@ -36,6 +36,7 @@ class Block_Styles {
 	 * @return void
 	 */
 	public function run() {
+		$this->styles = array();
 		$this->add_block_styles();
 	}
 
