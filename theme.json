@@ -40,32 +40,32 @@
       "palette": [
         {
           "slug": "ti-bg",
-          "color": "var(--nv-site-bg, #F6F4F2)",
+          "color": "var(--nv-site-bg, #FFFFFF)",
           "name": "Background"
         },
         {
           "slug": "ti-fg",
-          "color": "var(--nv-text-color, #202020)",
+          "color": "var(--nv-text-color, #192622)",
           "name": "Foreground"
         },
         {
           "slug": "ti-accent",
-          "color": "var(--nv-primary-accent, #923416)",
+          "color": "var(--nv-primary-accent, #388A77)",
           "name": "Accent"
         },
         {
           "slug": "ti-accent-secondary",
-          "color": "var(--nv-secondary-accent, #B5431F)",
+          "color": "var(--nv-secondary-accent, #449B87)",
           "name": "Accent Secondary"
         },
         {
           "slug": "ti-bg-inv",
-          "color": "var(--nv-dark-bg, #582515)",
+          "color": "var(--nv-dark-bg, #192D28)",
           "name": "Background Dark"
         },
         {
           "slug": "ti-bg-alt",
-          "color": "var(--nv-light-bg, #EEE8E1)",
+          "color": "var(--nv-light-bg, #F9F8F8)",
           "name": "Background Alt"
         },
         {
@@ -415,14 +415,14 @@
     },
     "typography": {
       "fontSize": "var(--neve-font-size-body, var(--wp--preset--font-size--normal))",
-      "fontFamily": "var(--neve-font-family-heading, var( --wp--preset--font-family--hanken-grotesk, '\"Hanken Grotesk\", sans-serif'))",
+      "fontFamily": "var(--neve-font-family-heading, var( --wp--preset--font-family--figtree, '\"Figtree\", sans-serif'))",
       "fontWeight": "var(--neve-font-weight-body, 400)",
       "lineHeight": "var(--neve-font-line-height-body, 1.7)"
     },
     "elements": {
       "heading": {
         "typography": {
-          "fontFamily": "var(--neve-font-family-heading, var( --wp--preset--font-family--playfair-display, '\"Playfair Display\", sans-serif'))",
+          "fontFamily": "var(--neve-font-family-heading, var( --wp--preset--font-family--figtree, '\"Figtree\", sans-serif'))",
           "fontWeight": "var(--neve-font-weight-heading, 600)",
           "lineHeight": "var(--neve-font-line-height-heading, 1.3)",
           "fontSize": "var(--neve-font-size-heading, var(--wp--preset--font-size--huge))"
@@ -436,42 +436,42 @@
       "h1": {
         "typography": {
           "fontSize": "var(--neve-font-size-h1, var(--wp--preset--font-size--huge))",
-          "fontWeight": "var(--neve-font-weight-h1, 600)",
+          "fontWeight": "var(--neve-font-weight-h1, 700)",
           "lineHeight": "var(--neve-font-line-height-h1, 1.25)"
         }
       },
       "h2": {
         "typography": {
           "fontSize": "var(--neve-font-size-h2, var(--wp--preset--font-size--x-large))",
-          "fontWeight": "var(--neve-font-weight-h2, 600)",
+          "fontWeight": "var(--neve-font-weight-h2, 700)",
           "lineHeight": "var(--neve-font-line-height-h2, 1.35)"
         }
       },
       "h3": {
         "typography": {
           "fontSize": "var(--neve-font-size-h3, var(--wp--preset--font-size--large))",
-          "fontWeight": "var(--neve-font-weight-h3, 600)",
+          "fontWeight": "var(--neve-font-weight-h3, 700)",
           "lineHeight": "var(--neve-font-line-height-h3, 1.35)"
         }
       },
       "h4": {
         "typography": {
           "fontSize": "var(--neve-font-size-h4, var(--wp--preset--font-size--medium))",
-          "fontWeight": "var(--neve-font-weight-h4, 600)",
+          "fontWeight": "var(--neve-font-weight-h4, 700)",
           "lineHeight": "var(--neve-font-line-height-h4, 1.4)"
         }
       },
       "h5": {
         "typography": {
           "fontSize": "var(--neve-font-size-h5, var(--wp--preset--font-size--normal))",
-          "fontWeight": "var(--neve-font-weight-h5, 600)",
+          "fontWeight": "var(--neve-font-weight-h5, 700)",
           "lineHeight": "var(--neve-font-line-height-h5, 1.55)"
         }
       },
       "h6": {
         "typography": {
           "fontSize": "var(--neve-font-size-h6, var(--wp--preset--font-size--small))",
-          "fontWeight": "var(--neve-font-weight-h6, 600)",
+          "fontWeight": "var(--neve-font-weight-h6, 700)",
           "lineHeight": "var(--neve-font-line-height-h6, 1.6)"
         }
       }
@@ -651,17 +651,7 @@
     },
     {
       "name": "header_s1",
-      "title": "Header Variation - Centered",
-      "area": "header"
-    },
-    {
-      "name": "header_s2",
       "title": "Header Variation - Subheader",
-      "area": "header"
-    },
-    {
-      "name": "header_s3",
-      "title": "Header Variation - Hamburger Menu",
       "area": "header"
     },
     {
@@ -671,22 +661,12 @@
     },
     {
       "name": "footer_s1",
-      "title": "Footer Variation - Site Logo",
+      "title": "Footer Variation - Columns",
       "area": "footer"
     },
     {
       "name": "footer_s2",
-      "title": "Footer Variation - 3 Columns",
-      "area": "footer"
-    },
-    {
-      "name": "footer_s3",
-      "title": "Footer Variation - 4 Columns",
-      "area": "footer"
-    },
-    {
-      "name": "footer_s4",
-      "title": "Footer Variation - 5 Columns",
+      "title": "Footer Variation - CTA",
       "area": "footer"
     }
   ]

@@ -37,8 +37,6 @@ class Block_Patterns {
 	 * Block_Patterns constructor.
 	 */
 	public function __construct() {
-		$this->setup_properties();
-
 		add_action( 'init', array( $this, 'run' ) );
 	}
 
@@ -48,6 +46,7 @@ class Block_Patterns {
 	 * @return void
 	 */
 	public function run() {
+		$this->setup_properties();
 		$this->register_categories();
 		$this->register_patterns();
 	}
@@ -75,27 +74,33 @@ class Block_Patterns {
 			'templates/single-post-cover',
 			'templates/archive-cover',
 			'templates/archive-list',
+			'templates/404',
 
 			// layout patterns.
-			'layout/404',
 			'layout/content-1',
 			'layout/content-2',
+			'layout/content-3',
+			'layout/content-4',
+			'layout/content-5',
+			'layout/content-6',
+			'layout/content-7',
+			'layout/content-8',
+			'layout/content-9',
 			'layout/cta-1',
 			'layout/cta-2',
 			'layout/cta-3',
-			'layout/events',
-			'layout/faq',
+			'layout/faqs-1',
 			'layout/features-1',
 			'layout/features-2',
-			'layout/features-3',
-			'layout/features-4',
 			'layout/hero-1',
-			'layout/ministries-1',
-			'layout/ministries-2',
-			'layout/sermons-1',
-			'layout/sermons-2',
-			'layout/testimonial',
-			'layout/verse',
+			'layout/hero-2',
+			'layout/pricing-1',
+			'layout/pricing-2',
+			'layout/stats-1',
+			'layout/stats-2',
+			'layout/testimonials-1',
+			'layout/testimonials-2',
+			'layout/testimonials-3',
 
 			// Post patterns.
 			'loops/posts-1',
