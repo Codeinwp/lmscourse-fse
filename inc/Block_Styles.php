@@ -27,8 +27,16 @@ class Block_Styles {
 	 */
 	public function __construct() {
 		$this->styles = array();
+		add_action( 'init', array( $this, 'run' ) );
+	}
 
-		add_action( 'init', array( $this, 'add_block_styles' ) );
+	/**
+	 * Run the class functionality.
+	 *
+	 * @return void
+	 */
+	public function run() {
+		$this->add_block_styles();
 	}
 
 	/**

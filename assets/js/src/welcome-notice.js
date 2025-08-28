@@ -11,12 +11,12 @@ function handleWelcomeNotice( $ ) {
 		redirectUrl,
 		ajaxUrl,
 		nonce,
-		wpfpRefNonce,
-		wpfpStatus,
+		masteriyoRefNonce,
+		masteriyoStatus,
 	} = lmscourseFSEData;
 
 	const installBtn = $(
-		'.lmscourse-fse-welcome-notice #lmscourse-fse-install-wpfp'
+		'.lmscourse-fse-welcome-notice #lmscourse-fse-install-masteriyo'
 	);
 	const dismissBtn = $( '.lmscourse-fse-welcome-notice .notice-dismiss' );
 	const notice = $( '.lmscourse-fse-welcome-notice' );
@@ -31,13 +31,13 @@ function handleWelcomeNotice( $ ) {
 		} );
 	};
 
-	const activateWpfp = async () => {
+	const activateMasteriyo = async () => {
 		installText.text( activating );
 		await activatePlugin( activationUrl );
 
 		await $.post( ajaxUrl, {
-			nonce: wpfpRefNonce,
-			action: 'lmscourse_fse_set_wpfp_ref',
+			nonce: masteriyoRefNonce,
+			action: 'lmscourse_fse_set_masteriyo_ref',
 		} );
 
 		installSpinner.removeClass( 'dashicons-update' );
@@ -51,18 +51,18 @@ function handleWelcomeNotice( $ ) {
 		installSpinner.removeClass( 'hidden' );
 		installBtn.attr( 'disabled', true );
 
-		if ( wpfpStatus === 'active' ) {
+		if ( masteriyoStatus === 'active' ) {
 			return;
 		}
 
-		if ( wpfpStatus === 'installed' ) {
-			await activateWpfp();
+		if ( masteriyoStatus === 'installed' ) {
+			await activateMasteriyo();
 			return;
 		}
 
 		installText.text( installing );
-		await installPlugin( 'wp-full-stripe-free' );
-		await activateWpfp();
+		await installPlugin( 'learning-management-system' );
+		await activateMasteriyo();
 	} );
 
 	$( dismissBtn ).on( 'click', () => {
