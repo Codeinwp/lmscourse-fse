@@ -37,3 +37,6 @@ All images are licensed under CC0.
 - https://free-images.com/display/guitar_finger_picked_acoustic.html
 - https://free-images.com/display/guitar_people_man_black.html
 - https://free-images.com/display/electric_guitar_musician_instrument.html
+- https://free-images.com/display/black_white_notes_music_0.html
+- https://free-images.com/display/guitar_rickenbacker_music_1611775.html
+- welcome-notice.webp is also licensed under CC0
