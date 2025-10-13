@@ -16,6 +16,14 @@ LMSCourse FSE is distributed under the terms of the GNU GPLv2 or later
 
 == Changelog ==
 
+##### [Version 1.0.1](https://github.com/Codeinwp/lmscourse-fse/compare/v1.0.0...v1.0.1) (2025-10-13)
+
+- Fixes images not loading in some patterns
+- Adds missing image credits
+
+
+
+
 ####   Version 1.0.0 (2025-08-28)
 
 - Initial version
