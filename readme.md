@@ -16,9 +16,18 @@ LMSCourse FSE is distributed under the terms of the GNU GPLv2 or later
 
 ## Changelog ##
 
+##### [Version 1.0.1](https://github.com/Codeinwp/lmscourse-fse/compare/v1.0.0...v1.0.1) (2025-10-13)
+
+- Fixes images not loading in some patterns
+- Adds missing image credits
+
+
+
+
 ####   Version 1.0.0 (2025-08-28)
 
 - Initial version
+
 
 ## Resources ##
 All images are licensed under CC0.
@@ -36,3 +45,6 @@ All images are licensed under CC0.
 - https://free-images.com/display/guitar_finger_picked_acoustic.html
 - https://free-images.com/display/guitar_people_man_black.html
 - https://free-images.com/display/electric_guitar_musician_instrument.html
+- https://free-images.com/display/black_white_notes_music_0.html
+- https://free-images.com/display/guitar_rickenbacker_music_1611775.html
+- welcome-notice.webp is also licensed under CC0
