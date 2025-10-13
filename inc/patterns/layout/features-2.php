@@ -14,12 +14,12 @@
 
 use LMSCourseFSE\Assets_Manager;
 
-$lmscourse_fse_icon01 = Assets_Manager::get_image_url( 'theme-icon-01.webp' );
-$lmscourse_fse_icon02 = Assets_Manager::get_image_url( 'theme-icon-02.webp' );
-$lmscourse_fse_icon03 = Assets_Manager::get_image_url( 'theme-icon-03.webp' );
-$lmscourse_fse_icon04 = Assets_Manager::get_image_url( 'theme-icon-04.webp' );
-$lmscourse_fse_icon05 = Assets_Manager::get_image_url( 'theme-icon-05.webp' );
-$lmscourse_fse_icon06 = Assets_Manager::get_image_url( 'theme-icon-06.webp' );
+$lmscourse_fse_icon01        = Assets_Manager::get_image_url( 'theme-icon-01.webp' );
+$lmscourse_fse_icon02        = Assets_Manager::get_image_url( 'theme-icon-02.webp' );
+$lmscourse_fse_icon03        = Assets_Manager::get_image_url( 'theme-icon-03.webp' );
+$lmscourse_fse_icon04        = Assets_Manager::get_image_url( 'theme-icon-04.webp' );
+$lmscourse_fse_icon05        = Assets_Manager::get_image_url( 'theme-icon-05.webp' );
+$lmscourse_fse_icon06        = Assets_Manager::get_image_url( 'theme-icon-06.webp' );
 $lmscourse_fse_testimonial02 = Assets_Manager::get_image_url( 'testimonial-2.webp' );
 
 return array(
