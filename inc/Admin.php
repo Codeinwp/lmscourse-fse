@@ -56,6 +56,7 @@ class Admin {
 		add_action( 'wp_ajax_lmscourse_fse_set_masteriyo_ref', array( $this, 'set_masteriyo_ref' ) );
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_internal_page' ) );
+		add_filter( 'lmscourse_fse_ai_connect_metadata', array( $this, 'get_ai_connect_metadata' ) );
 	}
 
 	/**
@@ -293,5 +294,26 @@ class Admin {
 		}
 		
 		do_action( 'themeisle_internal_page', LMSCOURSE_FSE_PRODUCT_SLUG, $screen->id );
+	}
+
+	/**
+	 * Get the data for the SDK "Connect your AI agent" module.
+	 *
+	 * @return array<string, string|string[]>
+	 */
+	public function get_ai_connect_metadata() {
+		return array(
+			'name'         => 'LMS Course FSE',
+			'notice_cases' => array(
+				__( 'change your site\'s style', 'lmscourse-fse' ),
+				__( 'edit your header and footer', 'lmscourse-fse' ),
+				__( 'add a course or pricing section to any page', 'lmscourse-fse' ),
+			),
+			'prompts'      => array(
+				__( 'Switch to the LMS Course FSE style variation with the dark palette.', 'lmscourse-fse' ),
+				__( 'Add a Sign in link to the right of my header navigation.', 'lmscourse-fse' ),
+				__( 'Insert a course pricing pattern from my theme into my Pricing page.', 'lmscourse-fse' ),
+			),
+		);
 	}
 }
