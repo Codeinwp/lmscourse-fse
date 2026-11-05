@@ -16,6 +16,13 @@ LMSCourse FSE is distributed under the terms of the GNU GPLv2 or later
 
 == Changelog ==
 
+##### [Version 1.0.3](https://github.com/Codeinwp/lmscourse-fse/compare/v1.0.2...v1.0.3) (2026-11-05)
+
+- Updated dependencies
+
+
+
+
 ##### [Version 1.0.2](https://github.com/Codeinwp/lmscourse-fse/compare/v1.0.1...v1.0.2) (2026-10-01)
 
 - Updated dependencies
