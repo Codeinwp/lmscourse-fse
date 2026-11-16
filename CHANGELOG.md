@@ -1,3 +1,8 @@
+##### [Version 1.0.4](https://github.com/Codeinwp/lmscourse-fse/compare/v1.0.3...v1.0.4) (2026-11-16)
+
+- Enhanced security
+- Updated dependencies
+
 ##### [Version 1.0.3](https://github.com/Codeinwp/lmscourse-fse/compare/v1.0.2...v1.0.3) (2026-11-05)
 
 - Updated dependencies
