@@ -57,6 +57,7 @@ class Admin {
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_internal_page' ) );
 		add_filter( 'lmscourse_fse_ai_connect_metadata', array( $this, 'get_ai_connect_metadata' ) );
+		add_filter( 'lmscourse_fse_support_hub_metadata', array( $this, 'get_support_hub_metadata' ) );
 	}
 
 	/**
@@ -313,6 +314,26 @@ class Admin {
 				__( 'Switch to the LMS Course FSE style variation with the dark palette.', 'lmscourse-fse' ),
 				__( 'Add a Sign in link to the right of my header navigation.', 'lmscourse-fse' ),
 				__( 'Insert a course pricing pattern from my theme into my Pricing page.', 'lmscourse-fse' ),
+			),
+		);
+	}
+
+	/**
+	 * Metadata for the Themeisle SDK Support Hub: the footer links shown in the Help form.
+	 *
+	 * LMS Course FSE is a free theme with no Pro tier, so is_pro is always false.
+	 *
+	 * @return array{is_pro: bool, links: array<int, array{icon: string, text: string, url: string}>}
+	 */
+	public function get_support_hub_metadata() {
+		return array(
+			'is_pro' => false,
+			'links'  => array(
+				array(
+					'icon' => 'groups',
+					'text' => __( 'Community Forum', 'lmscourse-fse' ),
+					'url'  => 'https://wordpress.org/support/theme/lmscourse-fse/',
+				),
 			),
 		);
 	}
